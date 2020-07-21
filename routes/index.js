@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
 
 router.get('/getAllData', (req, res, next) => {
     let ds = new DataService();
-    res.send(ds.getAllOnlineMusic());
+    ds.getAllOnlineMusic(res);
 });
 
 module.exports = router;
