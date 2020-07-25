@@ -4,6 +4,10 @@ class DataService {
     constructor() {
     }
 
+    /**
+     * 获取所有在线音乐
+     * @param res
+     */
     getAllOnlineMusic(res) {
         let json = null;
         let db = new DB();
@@ -16,6 +20,15 @@ class DataService {
             db.close();
             res.send(json);
         });
+    }
+
+    /**
+     * 根据关键字获取在线音乐
+     * @param req
+     * @param res
+     */
+    getOnlineMusicByKeyword(req, res) {
+
     }
 }
 
